@@ -1,0 +1,13 @@
+\select@language {french}
+\contentsline {section}{\numberline {1}Total Variability paradigm}{2}{section.2}
+\contentsline {section}{\numberline {2}ComputeJFAStat}{3}{section.4}
+\contentsline {subsection}{\numberline {2.1}Inputs-Outputs}{3}{subsection.5}
+\contentsline {subsection}{\numberline {2.2}ComputeJFAStat options}{4}{subsection.6}
+\contentsline {section}{\numberline {3}Total Variability}{5}{section.8}
+\contentsline {subsection}{\numberline {3.1}Mandatory inputs/outputs}{5}{subsection.9}
+\contentsline {subsection}{\numberline {3.2}Optional inputs/outputs}{5}{subsection.10}
+\contentsline {subsection}{\numberline {3.3}TotalVariability options}{6}{subsection.11}
+\contentsline {section}{\numberline {4}TrainTarget}{7}{section.13}
+\contentsline {subsection}{\numberline {4.1}Input-Output}{7}{subsection.14}
+\contentsline {subsection}{\numberline {4.2}TrainTarget options for i-Vectors extraction}{8}{subsection.15}
+\contentsline {section}{\numberline {5}First run}{8}{section.17}

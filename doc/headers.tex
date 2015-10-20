@@ -1,0 +1,297 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[frenchb]{babel}
+\usepackage[T1]{fontenc}           % for hyphenations to work
+\usepackage{amsmath,amssymb,amsfonts,textcomp}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage[frenchb]{minitoc}
+\usepackage{multirow}
+\usepackage[round,authoryear]{natbib}
+\usepackage{fancyhdr}
+\usepackage{afterpage}
+\usepackage{longtable}
+\usepackage{soul}
+\usepackage[latin1]{inputenc}
+\usepackage{array}
+\usepackage{subfigure}
+\usepackage{hhline}
+\usepackage{url}
+\usepackage[table]{xcolor}
+
+
+
+
+
+
+\usepackage[colorlinks=true, urlcolor=darkblue,pagebackref]{hyperref}
+
+%Ajouts Anthony
+\usepackage{version}
+\DeclareMathAlphabet{\mathscr}{OT1}{pzc}%
+                                 {m}{it}
+\usepackage[mathcal]{eucal}
+%\DeclareSymbolFont{calletters}{OMS}{cmsy}{m}{n}
+%\DeclareSymbolFontAlphabet{\mathcal}{calletters}
+
+ \usepackage[acronym,footnote]{glossaries} % make a separate list of acronyms
+
+
+
+
+%\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter. #1}{}}
+%\renewcommand{\sectionmark}[1]{\markright{\thesection. #1}}
+%% Setting up pagestyles for ``fancy''
+\chead{}
+\rhead[]{\nouppercase{\rightmark}}
+\lhead[\nouppercase{\leftmark}]{}
+\renewcommand{\headrulewidth}{0.5pt}
+
+\newenvironment{palat}
+  {\fontfamily{lasy}\fontshape{sl}\selectfont}{}
+
+
+%\footrulewidth 0.5pt
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+% watch a movie with one frame on each page
+%\rfoot{\setlength{\unitlength}{1mm} 
+%\begin{picture}(0,0) 
+%\put(5,0){\includegraphics{pic\thepage.ps}} 
+%\end{picture}} 
+
+% »quivalent ? \usepackage{palatino}
+\usepackage{mathpazo} 
+\usepackage[scaled=.95]{helvet} 
+\usepackage{courier} 
+
+\usepackage[twoside]{geometry}
+\setlength{\oddsidemargin}{1cm}
+\setlength{\evensidemargin}{0cm}
+\addtolength{\textheight}{1cm}
+\addtolength{\headsep}{0.3cm}
+\addtolength{\footskip}{0.3cm}
+\usepackage{layout}
+%\newlength{\oldtextwidth}
+%\setlength{\oldtextwidth}{\textwidth}
+%\usepackage[margin=1cm]{geometry}
+%\usepackage[margin=2.5cm]{geometry}
+\usepackage{setspace}
+
+\usepackage{boxedminipage}
+\usepackage{rotating}
+\newcommand\vertical[1]{\begin{sideways}#1\end{sideways}}
+
+
+\newcommand{\mychaptermark}[1]{\markboth{ Chapter \thechapter.\  #1}{}}
+
+
+\usepackage[width=.95\textwidth,font={small,it},labelfont=bf]{caption}
+%\renewcommand{\captionfont}{\small\itshape}
+\setlength{\fboxsep}{5pt}
+
+\usepackage{parskip}
+\setlength{\parindent}{1.5em}
+% re-d»finition des marges
+%\textwidth = 15 cm
+%\textheight = 22 cm
+%\oddsidemargin = 1.0 cm
+%\evensidemargin = 0.0 cm
+%\topmargin = 0.0 cm
+%\headheight = 0.0 cm
+%\headsep = 1.0 cm
+%\setlength{\parskip}{0.5em}
+%\parindent = 0.6 cm
+%\abovecaptionskip = 0 cm
+
+% line badness cooking
+%\tolerance 1414 
+%\hbadness 1414 
+%\emergencystretch 1.5em 
+%\hfuzz 0.3pt 
+%\widowpenalty=10000 
+%\vfuzz \hfuzz 
+%\raggedbottom 
+
+%\prefacename Preface Pr»face 
+%\refname a References R»f»rences 
+%\abstractname Abstract R»sum» 
+%\bibname b Bibliography Bibliographie 
+%\chaptername Chapter Chapitre 
+%\appendixname Appendix Annexe 
+%\contentsname Contents Table des matiÀres 
+%\listfigurename List of Figures Table des figures 
+%\listtablename List of Tables Liste des tableaux 
+%\indexname Index Index 
+%\figurename Figure F I G. 
+%\tablename Table TAB . 
+%\partname Part partie 
+%\enclname encl P. J. 
+%\ccname cc Copie ? 
+%\headtoname To 
+%\pagename Page page 
+%\seename see voir 
+%\alsoname see also voir aussi 
+\addto{\captionsfrench}{\renewcommand*{\listfigurename}{Liste des illustrations}} 
+
+%\renewcommand\floatpagefraction{.9}
+%\renewcommand\topfraction{.9}
+%\renewcommand\bottomfraction{.9}
+%\renewcommand\textfraction{.1}   
+%\setcounter{totalnumber}{50}
+%\setcounter{topnumber}{50}
+%\setcounter{bottomnumber}{50}
+
+%\clubpenalty=9999
+%\widowpenalty=9999
+
+%\usepackage[plainpages=false,pdfpagelabels,hypertexnames=false]{hyperref}
+\usepackage{hyperref}
+%\hypersetup{plainpages=false,pdfpagelabels,hypertexnames=false,colorlinks=true, linkcolor=black, filecolor=black, pagecolor=black, urlcolor=black, citecolor=black}
+\hypersetup{	pagebackref=true,	
+			backref=true,
+			plainpages=false,
+			pdfpagelabels,
+			hypertexnames=false,
+			colorlinks=true, 
+			linkcolor=blue, 
+			filecolor=blue, 
+			pagecolor=blue, 
+			urlcolor=blue, 
+			citecolor=blue,
+			pdftitle={Th\`{e}se},pdfauthor={Nom de l'auteur},pdfsubject={LaTex}}
+
+\newcommand\textsubscript[1]{\ensuremath{_{\text{#1}}}}
+\everymath{\displaystyle}
+
+%\newcommand\todo[1]{[\textcolor[rgb]{0,0,0}{\textbf{? faire:} \textit{#1}}]}
+\newcommand\todo[1]{ [\textcolor[rgb]{0.5,0,0}{\textbf{? faire:} #1}] }
+%\newcommand\todo[1]{}
+%\newcommand\tocite[1]{[\textcolor[rgb]{0,0,0}{\textbf{? citer:} \textit{#1}}]}
+\newcommand\tocite[1]{[\textcolor[rgb]{0,0.5,0}{\textbf{? citer:} #1}]}
+%\newcommand\tocite[1]{}
+
+%\renewcommand\label[1]{[\textcolor[rgb]{0,0,0.5}{\textbf{label:} #1\label{#1}}]}
+\newcommand\quotes[1]{\guillemotleft\nobreak\hspace{1.5pt}#1\nobreak\hspace{1.5pt}\guillemotright}
+\newcommand\cfigurex[4]
+{
+	\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=#4\textwidth]{#1}
+	\caption[#2]{#3}
+	\end{figure}
+}
+
+\newcommand\cfigure[3]
+{
+	\begin{figure}[hbt!]
+	\centering
+	\includegraphics[width=#3\textwidth]{#1}
+	\caption{#2}
+	\end{figure}
+}
+
+\newcommand\cfigurebox[3]
+{
+	\begin{figure}[hbt!]
+	\centering
+	\begin{boxedminipage}{#3\textwidth}
+	\includegraphics[width=\textwidth]{#1}
+	\end{boxedminipage}
+	\caption{#2}
+	\end{figure}
+}
+
+\newcommand\ctablex[4]%
+{%
+	\begin{table}[hbt]
+	\centering
+	\begin{tabular}{ #1}
+	\hline
+	#4
+	\hline
+	\end{tabular}
+	\caption{\label{#3} #2}
+	\end{table}
+}
+
+\newcommand\ctablexx[5]%
+{%
+	\begin{table}[hbt]
+	\centering
+	\begin{tabular}{ #1}
+	\hline
+	#5
+	\hline
+	\end{tabular}
+	\caption[#2]{\label{#4} #3}
+	\end{table}
+}
+
+\def\max{\mathop{\hbox{max}}}
+\def\argmax{\mathop{\hbox{argmax}}}
+\def\min{\mathop{\hbox{min}}}
+\def\argmin{\mathop{\hbox{argmin}}}
+\def\nb{\mathop{\hbox{nb}}}
+
+%\newcommand{\citep}[1]{\cite{#1}}
+%\newcommand{\citet}[1]{\cite{#1}}
+\renewcommand{\cite}[1]{\citep{#1}}
+%\newcommand{\refp}[1]{\ref{#1}, page \pageref{#1}}
+%\newcommand{\refp}[1]{\ref{#1}}
+
+%\newcommand\chapterx[1]{\chapter*{#1}\addcontentsline{toc}{chapter}{#1}}
+%\newcommand\sectionx[1]{\section*{#1}\addcontentsline{toc}{section}{#1}}
+%\newcommand\chapterx[1]{\chapter{#1}}
+%\newcommand\sectionx[1]{\section{#1}}
+%\newcommand\subsectionx[1]{\section{#1}}
+
+%\newcommand{\etc}{, etc.}
+\newcommand{\etc}{...}
+%\setcounter{tocdepth}{5}
+%\hyphenation{sur-ap-pren-tis-sage}
+\pagestyle{plain}
+\newcommand{\postheader}{
+%\renewcommand{\minitoc}{}
+%\doublespacing
+%\addcontentsline{toc}{chapter}{Liste des tableaux}
+\pagestyle{fancy}
+%\bibliographyunit[\chapter] 
+%\defaultbibliography{biblio-exact} 
+%\defaultbibliographystyle{lia-these-fr} 
+%\begin{bibunit}
+}
+
+%\usepackage{bibunits}
+%\newcommand\chapterbib{}
+%\usepackage[sectionbib]{bibunits}
+%\newcommand\chapterbib{\putbib}
+
+\newcommand\postdocument{
+\cleardoublepage
+\addstarredchapter{Liste des illustrations}
+\listoffigures
+\cleardoublepage
+\addstarredchapter{Liste des tableaux}
+\listoftables 
+%\bibliographystyle{apalike-fr}
+%\bibliographystyle{plain}
+\cleardoublepage
+\addstarredchapter{Bibliographie}
+
+%\putbib[biblio-exact]
+\bibliographystyle{lia-these-fr}
+\bibliography{../../biblio}
+
+%\end{bibunit}
+%\begin{bibunit}
+%\renewcommand*{\bibname}{Publications Personnelles}
+%\addstarredchapter{Publications Personnelles}
+%\nocite{*}
+%\putbib[biblio-perso]
+%\end{bibunit}
+
+
+}

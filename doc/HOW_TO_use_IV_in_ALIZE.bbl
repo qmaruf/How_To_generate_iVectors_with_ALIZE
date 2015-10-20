@@ -1,0 +1,59 @@
+\begin{thebibliography}{}
+\expandafter\ifx\csname fonteauteurs\endcsname\relax
+\def\fonteauteurs{\scshape}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}%
+    \message{You should include the url package}\fi
+
+\bibitem[Dehak \emph{et~al.}, 2011]{Dehak11_a}
+\bgroup\fonteauteurs\bgroup Dehak\egroup\egroup{}, N.,
+  \bgroup\fonteauteurs\bgroup Kenny\egroup\egroup{}, P.,
+  \bgroup\fonteauteurs\bgroup Dehak\egroup\egroup{}, R.,
+  \bgroup\fonteauteurs\bgroup Dumouchel\egroup\egroup{}, P. et
+  \bgroup\fonteauteurs\bgroup Ouellet\egroup\egroup{}, P. (2011).
+\newblock {Front-End Factor Analysis for Speaker Verification}.
+\newblock {\em IEEE Transactions on Audio, Speech, and Language Processing},
+  19(4)\string:\penalty500\relax 788--798.
+
+\bibitem[Franco-Pedroso \emph{et~al.}, 2010]{Franco10}
+\bgroup\fonteauteurs\bgroup Franco-Pedroso\egroup\egroup{}, J.,
+  \bgroup\fonteauteurs\bgroup Lopez-Moreno\egroup\egroup{}, I.,
+  \bgroup\fonteauteurs\bgroup Toledano\egroup\egroup{}, D.~T. et
+  \bgroup\fonteauteurs\bgroup Gonzalez-Rodriguez\egroup\egroup{}, J. (2010).
+\newblock {ATVS-UAM System Description for the Audio Segmentation and Speaker
+  Diarization Albayzin 2010 Evaluation}.
+\newblock \emph{In} {\em FALA "VI Jornadas en Tecnología del Habla" and II
+  Iberian SLTech Workshop}, pages 415--418.
+
+\bibitem[Kanagasundaram \emph{et~al.}, 2011]{Kanagasundaram11}
+\bgroup\fonteauteurs\bgroup Kanagasundaram\egroup\egroup{}, A.,
+  \bgroup\fonteauteurs\bgroup Vogt\egroup\egroup{}, R.,
+  \bgroup\fonteauteurs\bgroup Dean\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Sridharan\egroup\egroup{}, S. et
+  \bgroup\fonteauteurs\bgroup Mason\egroup\egroup{}, M. (2011).
+\newblock {i-vector Based Speaker Recognition on Short Utterances}.
+\newblock \emph{In} {\em International Conference on Speech Communication and
+  Technology}.
+
+\bibitem[Larcher \emph{et~al.}, 2012]{Larcher12_a}
+\bgroup\fonteauteurs\bgroup Larcher\egroup\egroup{}, A.,
+  \bgroup\fonteauteurs\bgroup Bousquet\egroup\egroup{}, P.-M.,
+  \bgroup\fonteauteurs\bgroup Lee\egroup\egroup{}, K.~A.,
+  \bgroup\fonteauteurs\bgroup Matrouf\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Li\egroup\egroup{}, H. et
+  \bgroup\fonteauteurs\bgroup Bonastre\egroup\egroup{}, J.-F. (2012).
+\newblock {I-vectors in the context of phonetically-constrained short
+  utterances for speaker verification}.
+\newblock \emph{In} {\em IEEE International Conference on Acoustics, Speech,
+  and Signal Processing, ICASSP}.
+
+\bibitem[Martinez \emph{et~al.}, 2011]{Martinez11}
+\bgroup\fonteauteurs\bgroup Martinez\egroup\egroup{}, D.,
+  \bgroup\fonteauteurs\bgroup Plchot\egroup\egroup{}, O.,
+  \bgroup\fonteauteurs\bgroup Burget\egroup\egroup{}, L.,
+  \bgroup\fonteauteurs\bgroup Glembek\egroup\egroup{}, O. et
+  \bgroup\fonteauteurs\bgroup Matejka\egroup\egroup{}, P. (2011).
+\newblock {Language Recognition in iVectors Space}.
+\newblock \emph{In} {\em Interspeech}.
+
+\end{thebibliography}

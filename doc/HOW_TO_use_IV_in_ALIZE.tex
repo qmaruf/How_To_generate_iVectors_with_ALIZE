@@ -1,0 +1,248 @@
+\input{headers}
+
+\title{How to generate I-Vectors with ALIZE}
+\author{\small \textit{anthony.larcher@i2r.a-star.edu.sg}}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\postheader
+
+\newpage
+\section{Total Variability paradigm}
+% theorie et references
+Initially introduced for speaker recognition, i-vectors \cite{Dehak11_a} have become very popular in the field of speech processing and recent publications show that they are also reliable for text-dependent speaker verification \cite{Larcher12_a} language recognition \cite{Martinez11} and speaker diarization \cite{Franco10}.
+%
+I-vectors convey the speaker characteristic among other information such as transmission channel, acoustic environment or phonetic content of the speech segment.
+
+Detailed descriptions of the Total Variability paradigm could be found in \cite{Dehak11_a,Martinez11,Kanagasundaram11}. The i-vector extraction could be seen as a probabilistic compression process that reduces the dimensionality of speech-session super-vectors according to a linear-Gaussian model. The speaker- and channel-dependent super-vector $\mathcal{M}_{(s,h)}$ of concatenated Gaussian Mixture Model (GMM) means is projected in a low dimensionality space, named Total Variability space, as follows
+%
+\begin{equation}
+\mathcal{M}_{(s,h)}=\textbf{m}+\textbf{T}\textbf{w}_{(s,h)}
+\label{I_Vector_modelling}
+\end{equation}
+%
+where $\textbf{m}$ is the mean super-vector of a gender-dependent Universal Background Model (UBM), $\textbf{T}$ is called Total Variability matrix and $\textbf{w}_{(s,h)}$ is the resulting i-vector.
+
+\newpage
+\section{ComputeJFAStat}
+%
+ComputeJFAStat computes Baum-Welch statistics for a list of files given a Gaussian Mixture Model.
+
+\subsection{Inputs-Outputs}
+%
+\begin{description}
+\item[Universal Background Model] Baum-Welch statistics are computed over this Universal background Model.
+%
+\item[Index file] the list of files to process is given in an index file (NDX). NDX file should be ascii file with one file per line.
+%
+\item[Null Order Statistics per Session] will not be used for TotalVariability estimation.
+%
+\item[Null Order Statistics per Speaker] this matrix contains zero order Baum-Welch statistics for each file. Dimensions of this matrix are number of files $\times$ number of distributions of the UBM.
+%
+\item[First Order Statistics per Session] will not be used for TotalVariability estimation.
+%
+\item[First Order Statistics per Speaker] this matrix contains zero order Baum-Welch statistics for each file. Dimensions of this matrix are number of files $\times$ dimension of super vector (which is equal to the number of distributions of the UBM multiplied by the dimension of acoustic features).
+\end{description}
+
+\newpage
+\subsection{ComputeJFAStat options}
+
+\begin{table}[!h]\footnotesize
+\begin{center}
+\begin{tabular}{m{4cm}m{4cm}m{7cm}}
+Option & Value & function \tabularnewline
+\hline
+\hline
+featureServerMemAlloc & integer & Specify the memory to allocate for the ALIZE buffer \tabularnewline
+featureServerMode & FEATURE$\_$WRITABLE & Specify the read/write mode of the featureServer (read-only by default) \tabularnewline
+featureServerBufferSize & ALL$\_$FEATURES & Algorithm Buffer \tabularnewline
+minLLK & integer & Specify minimum likelihood values \tabularnewline
+maxLLK & integer & Specify maximum likelihood values \tabularnewline
+\hline
+labelFilesPath & path & directory to load label files, could be relative or absolute\tabularnewline
+featureFilesPath & path & directory to load feature files, could be relative or absolute\tabularnewline
+matrixFilesPath & path & directory to load and save matrices model, could be relative or absolute \tabularnewline
+mixtureFilesPath & path & directory to load GMM model, could be relative or absolute \tabularnewline
+\hline
+loadMixtureFileFormat & RAW | XML & format of the GMM to load\tabularnewline
+loadMatrixFormat & DB | DT & format of the matrix to load, could be binary (DB) or text (DT)\tabularnewline
+saveMatrixFormat & DB | DT & format of the matrix to save, could be binary (DB) or text (DT)\tabularnewline
+loadFeatureFileFormat & SPRO4 | HTK | RAW & ALIZE can read different format of features including HTK, SPRO and RAW binary files\tabularnewline
+\hline
+loadMixtureFileExtension & string & extension of GMM files to load\tabularnewline
+loadMatrixFilesExtension & string & extension of Matrices files to load \tabularnewline
+saveMatrixFilesExtension & string & extension of Matrices files to save\tabularnewline
+loadFeatureFileExtension & string & extension of feature files to load\tabularnewline
+\hline
+ndxFilename & string & name of the index file (NDX) containing the list of files to process\tabularnewline
+inputWorldFilename & string & name of the Universal Background Model to be used for statistics computation.\tabularnewline
+nullOrderStatSpeaker & string & name of the file containing null order Baum-Welch statistics per speaker (sum of all sessions for one speaker) \tabularnewline
+nullOrderStatSession & string & name of the file containing null order Baum-Welch statistics per session\tabularnewline
+firstOrderStatSpeaker & string & name of the file containing first order Baum-Welch statistics per speaker (sum of all sessions for one speaker)\tabularnewline
+firstOrderStatSession & string & name of the file containing first order Baum-Welch statistics per session \tabularnewline
+\hline
+addDefaultLabel & boolean & add a default label in case no label is found for a feature file\tabularnewline
+defaultLabel & string & if no label file is found, all features from this file will be given the defaultlabel\tabularnewline
+labelSelectedFrames & string & feature label to use for statistics computation\tabularnewline
+frameLength & float & period of the frame extraction given in seconds\tabularnewline
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\section{Total Variability}
+%
+Total Variaiblity matrix can be computed by using EigenVoice program. However, some of the local variables used for JFA estimation are not used for Total Variability estimation and strongly increase the memory requirement. Total Variability is then another version of the EigenVoice program optimized to process a large number of sessions.
+However, optimization is still balancing between computational time and memory usage and TotalVariability may still require a large amount of memory.
+
+\subsection{Mandatory inputs/outputs}
+%
+\begin{description}
+\item[Universal Background Model] the UBM on which statistics have been computed. The super-vector of the co-variance coefficients from the UBM will be used by TotalVariability.
+\item[TotalVariability matrix] output of this executable, TotalVariability matrix contains the main eigenvectors of the Total Variability  space.
+\end{description}
+
+\subsection{Optional inputs/outputs}
+%
+Zero and first order Baum-Welch statistic matrices could be computed directly by the TotalVariability program. Those inputs are then not mandatory. However, considering that the quantity of files to process is important, we recommend to split the list of files to process and to parallelize the computation by using scripting and to concatenate eventually the matrices by using tools provided in ALIZE/LIA\_RAL.
+
+\begin{description}
+%
+\item[Null Order Statistics] this matrix contains zero order Baum-Welch statistics for each file. Dimensions of this matrix are number of files $\times$ number of distributions of the UBM.
+%
+\item[First Order Statistics] this matrix contains zero order Baum-Welch statistics for each file. Dimensions of this matrix are number of files $\times$ dimension of super vector (which is equal to the number of distributions of the UBM multiplied by the dimension of acoustic features).
+\end{description}
+
+\newpage
+\subsection{TotalVariability options}
+%
+\begin{table}[!htbf]\scriptsize
+\begin{center}
+\begin{tabular}{m{4cm}m{4cm}m{7cm}}
+Option & Value & function \tabularnewline
+\hline
+\hline
+numThread & integer & number of thread to run in parallel. Only available if LIA\_RAL is compiled with pThread library (see ALIZE FAQ for more information) \tabularnewline
+minLLK & integer & Specify minimum likelihood values \tabularnewline
+maxLLK & integer & Specify maximum likelihood values \tabularnewline
+\hline
+labelFilesPath & path & directory to load label files, could be relative or absolute\tabularnewline
+featureFilesPath & path & directory to load feature files, could be relative or absolute\tabularnewline
+matrixFilesPath & path & directory to load and save matrices model, could be relative or absolute \tabularnewline
+mixtureFilesPath & path & directory to load GMM model, could be relative or absolute \tabularnewline
+\hline
+loadMixtureFileFormat & RAW | XML & format of the GMM to load\tabularnewline
+loadMatrixFormat & DB | DT & format of the matrix to load, could be binary (DB) or text (DT)\tabularnewline
+saveMatrixFormat & DB | DT & format of the matrix to save, could be binary (DB) or text (DT)\tabularnewline
+loadFeatureFileFormat & SPRO4 | HTK | RAW & ALIZE can read different format of features including HTK, SPRO and raw binary files\tabularnewline
+\hline
+loadMixtureFileExtension & string & extension of GMM files to load\tabularnewline
+saveMatrixFilesExtension & string & extension of GMM files to save\tabularnewline
+loadFeatureFileExtension & string & extension of feature files to load\tabularnewline
+\hline
+addDefaultLabel & boolean & add a default label in case no label is found for a feature file\tabularnewline
+defaultLabel & string & if no label file is found, all features from this file will be given the defaultlabel\tabularnewline
+labelSelectedFrames & string & feature label to use for statistics computation\tabularnewline
+frameLength & float & period of the frame extraction given in seconds\tabularnewline
+\hline
+ndxFilename & string & name of the index file (NDX) containing the list of files to process\tabularnewline
+inputWorldFilename & string & name of the Universal Background Model to be used for statistics computation.\tabularnewline
+loadAccs & boolean & if true, then load existing statistic matrices, if false the statistics are first computed\tabularnewline
+nullOrderStatSpeaker & string & name of the file containing null order Baum-Welch statistics per file (in TotalVariability framework, speaker refer to one only file) \tabularnewline
+firstOrderStatSpeaker & string & name of the file containing first order Baum-Welch statistics per file (in TotalVariability framework, speaker refer to one only file)\tabularnewline
+\hline
+nbIt & integer & number of EM iterations to perform \tabularnewline
+totalVariabilityNumber & integer & rank of the TotalVariability matrix \tabularnewline
+loadInitTotalVariabilityMatrix & boolean & if true, load an existing matrix for initialization\tabularnewline
+randomInitLaw & normal | uniform &  distribution used to randomly initialize the matrix\tabularnewline
+initTotalVariabilityMatrix & string & name of the initialization matrix to load\tabularnewline
+saveInitT & boolean & save the initialization matrix \tabularnewline
+totalVariabilityMatrix & string & name of the file to store the final TotalVariability matrix \tabularnewline
+saveAllTVMatrices & boolean & if true, save the TotalVariability matrix after each iteration \tabularnewline
+minDivergence & boolean & use minimum divergence criteria to update T matrix\tabularnewline
+meanEstimate & string & name of the new mean estimate after minimum divergence \tabularnewline
+checkLLK & boolean &  if true compute the likelihood after each iteration (Likelihood is computed by creating a GMM for each session and has not been optimized yet)\tabularnewline
+computeLLK & integer & number of sessions to use to compute the likelihood after each iteration \tabularnewline
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\newpage
+\section{TrainTarget}
+
+Extract i-Vectors for a list of files.
+
+\subsection{Input-Output}
+
+Baum-Welch statistics have to be computed first by using ComputeJFAStats.
+I-Vectors can be extracted by using the same configuration used for JFA TrainTarget.
+However, TrainTarget run in mode "\textit{iVector}" is faster than in mode "\textit{JFA}" due to the Multi-Thread implementation.
+
+\begin{description}
+%
+\item[Null Order Statistics per Speaker] this matrix contains cumulated zero order Baum-Welch statistics for each file. Dimensions of this matrix are number of files $\times$ number of distributions of the UBM.
+%
+\item[First Order Statistics per Speaker] this matrix contains cumulated zero order Baum-Welch statistics for each file. Dimensions of this matrix are number of files $\times$ dimension of super vector (which is equal to the number of distributions of the UBM multiplied by the dimension of acoustic features).
+\end{description}
+
+\newpage
+\subsection{TrainTarget options for i-Vectors extraction}
+
+\begin{table}[!h]\footnotesize
+\begin{center}
+\begin{tabular}{m{4cm}m{4cm}m{7cm}}
+Option & Value & function \tabularnewline
+\hline
+\hline
+numThread & integer & number of thread to run in parallel. Only available if LIA\_RAL is compiled with pThread library (see ALIZE FAQ for more information) \tabularnewline
+featureServerMemAlloc & integer & Specify the memory to allocate for the ALIZE buffer \tabularnewline
+featureServerMode & FEATURE$\_$WRITABLE & Specify the read/write mode of the featureServer (read-only by default) \tabularnewline
+featureServerBufferSize & ALL$\_$FEATURES & Algorithm Buffer \tabularnewline
+minLLK & integer & Specify minimum likelihood values \tabularnewline
+maxLLK & integer & Specify maximum likelihood values \tabularnewline
+MAPAlgo & string & not used in \textit{iVector} mode but need to be fill\tabularnewline
+\hline
+matrixFilesPath & path & directory to load and save matrices model, could be relative or absolute \tabularnewline
+mixtureFilesPath & path & directory to load GMM model, could be relative or absolute \tabularnewline
+vectorFilesPath & path & directory to store i-Vector files, could be relative or absolute\tabularnewline
+\hline
+loadMixtureFileFormat & RAW | XML & format of the GMM to load\tabularnewline
+loadMatrixFormat & DB | DT & format of the matrix to load, could be binary (DB) or text (DT)\tabularnewline
+saveMatrixFormat & DB | DT & format of the matrix to save, could be binary (DB) or text (DT)\tabularnewline
+\hline
+loadMixtureFileExtension & string & extension of GMM files to load\tabularnewline
+loadMatrixFilesExtension & string & extension of Matrices files to load \tabularnewline
+saveMatrixFilesExtension & string & extension of Matrices files to save\tabularnewline
+vectorFilesExtension & string & extension of i-vector files \tabularnewline
+\hline
+channelCompensation & iVector & must be iVector to set this mode\tabularnewline
+ndxFilename & string & name of the index file (NDX) containing the list of files to process\tabularnewline
+inputWorldFilename & string & name of the Universal Background Model to be used for statistics computation.\tabularnewline
+minDivergence & boolean & use minimum divergence reestimated mean to compute iVectors\tabularnewline
+meanEstimate & string & name of the estimate of mean after minimum divergence \tabularnewline
+nullOrderStatSpeaker & string & name of the file containing null order Baum-Welch statistics per file\tabularnewline
+firstOrderStatSpeaker & string & name of the file containing first order Baum-Welch statistics per file\tabularnewline
+totalVariabilityMatrix & string & name of the TotalVariability matrix file to load \tabularnewline
+\hline
+totalVariabilityNumber & integer & rank of the TotalVariability matrix \tabularnewline
+labelSelectedFrames & string & feature label to use for statistics computation\tabularnewline
+frameLength & float & period of the frame extraction given in seconds\tabularnewline
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\section{First run}
+%
+Example of TotalVariability matrix estimation and i-Vector extraction is provided in \textit{IV.sh}.
+
+
+\bibliographystyle{apalike-fr}
+\bibliography{biblio}
+
+\end{document}

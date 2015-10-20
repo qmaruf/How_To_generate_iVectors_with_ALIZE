@@ -1,0 +1,42 @@
+**********************************************************************
+*	I-Vector extraction with ALIZE/LIA_RAL
+*
+*	by Anthony Larcher
+*	alarcher - at- i2r.a-star.edu.sg
+*
+**********************************************************************
+
+Documentation is provided in  ./doc/  directory, an evolutive version of this  documentation can be found in ALIZE wiki (http://alize.univ-avignon.fr/mediawiki/index.php/Main_Page)
+
+
+**********************************************************************
+*	Content of this package
+**********************************************************************
+ This package has been set up to give quick help on how to generate i-vectors using ALI/LIA_RAL
+ To try it out, please dowload ALIZE/LIA_RAL sources. After compiling the sources, please copy LIA_RAL *.exe" into the ./bin/ directory.
+ Then run the bash script IV.sh
+ 
+ -  ./bin/ 		strore your binaries in this directory
+ 
+ - ./cfg/		configuration files proposed for i-vector extraction are store in this directory
+ 
+ - ./data/		contains a small set of data (acoustic features and label files) used for this demo.
+			These data are part of the RSR2015 database.
+			
+			@INPROCEEDINGS{Larcher12_b,
+				author = {Anthony Larcher and Kong Aik Lee and Ma Bin and Haizhou Li},
+				title = {{RSR2015: Database for Text-Dependent Speaker Verification using Multiple Pass-Phrases}},
+				booktitle = {submited to Interspeech},
+				year = {2012},
+			}
+
+ - ./doc/		this directory contains a documention on how to generate i-vectors
+ 
+ - ./gmm/		directory used to store the Universal Background Model
+ 
+ - ./iv/		directory used to store the i-vectors when extracted
+ 
+ - ./mat/		directory used to store matrix objects
+ 
+ - ./ndx/ 		directory used to store index files
+ 

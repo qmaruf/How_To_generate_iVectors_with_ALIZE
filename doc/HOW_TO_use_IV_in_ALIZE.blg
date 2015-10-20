@@ -1,0 +1,45 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: HOW_TO_use_IV_in_ALIZE.aux
+The style file: apalike-fr.bst
+Database file #1: biblio.bib
+You've used 5 entries,
+            2038 wiz_defined-function locations,
+            632 strings with 8074 characters,
+and the built_in function-call counts, 2715 in all, are:
+= -- 279
+> -- 135
+< -- 1
++ -- 50
+- -- 50
+* -- 201
+:= -- 538
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 50
+chr.to.int$ -- 5
+cite$ -- 5
+duplicate$ -- 95
+empty$ -- 160
+format.name$ -- 55
+if$ -- 537
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 5
+newline$ -- 33
+num.names$ -- 15
+pop$ -- 67
+preamble$ -- 1
+purify$ -- 50
+quote$ -- 0
+skip$ -- 56
+stack$ -- 0
+substring$ -- 177
+swap$ -- 14
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 30
+warning$ -- 0
+while$ -- 15
+width$ -- 0
+write$ -- 69

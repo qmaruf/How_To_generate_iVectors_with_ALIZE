@@ -1,0 +1,361 @@
+Processing file[m001_01_001]
+Processing file[m001_01_002]
+Processing file[m001_01_003]
+Processing file[m001_01_004]
+Processing file[m001_01_005]
+Processing file[m002_01_001]
+Processing file[m002_01_002]
+Processing file[m002_01_003]
+Processing file[m002_01_004]
+Processing file[m002_01_005]
+Processing file[m003_01_001]
+Processing file[m003_01_002]
+Processing file[m003_01_003]
+Processing file[m003_01_004]
+Processing file[m003_01_005]
+Processing file[m004_01_001]
+Processing file[m004_01_002]
+Processing file[m004_01_003]
+Processing file[m004_01_004]
+Processing file[m004_01_005]
+Processing file[m005_01_001]
+Processing file[m005_01_002]
+Processing file[m005_01_003]
+Processing file[m005_01_004]
+Processing file[m005_01_005]
+Processing file[m006_01_001]
+Processing file[m006_01_002]
+Processing file[m006_01_003]
+Processing file[m006_01_004]
+Processing file[m006_01_005]
+Processing file[m007_01_001]
+Processing file[m007_01_002]
+Processing file[m007_01_003]
+Processing file[m007_01_004]
+Processing file[m007_01_005]
+Processing file[m008_01_001]
+Processing file[m008_01_002]
+Processing file[m008_01_003]
+Processing file[m008_01_004]
+Processing file[m008_01_005]
+Processing file[m009_01_001]
+Processing file[m009_01_002]
+Processing file[m009_01_003]
+Processing file[m009_01_004]
+Processing file[m009_01_005]
+Processing file[m010_01_001]
+Processing file[m010_01_002]
+Processing file[m010_01_003]
+Processing file[m010_01_004]
+Processing file[m010_01_005]
+(AccumulateJFAStat) FA Accs states saved
+	()Load Accumulators
+(AccumulateTVStat) ---------load statistics N [ 50 ] [ 256 ]
+(AccumulateTVStat) ---------load statistics F_X [ 50 ] [ 12800 ]
+(AccumulateTVStat) Random Init for TotalVariability Matrix with normal law , rank: [10] sv size: [12800]
+	(TotalVariability) Save the initial TotalVariability Matrix in TV_init
+	(TotalVariability) --------- start iteration 0 --------
+(AccumulateTVStat) Substract Mean from Speaker Statistics
+(AccumulateTVStat) compute V * Sigma-1 * V 
+(AccumulateTVStat) Compute and Inverse L Matrix for TotalVariability 
+(AccumulateTVStat) Update T Matrix
+(AccumulateTVStat) Done 
+(AccumulateTVStat) Minimum Divergence step 
+(AccumulateTVStat) Done 
+(AccumulateTVStat) ---------load statistics N [ 50 ] [ 256 ]
+(AccumulateTVStat) ---------load statistics F_X [ 50 ] [ 12800 ]
+	(TotalVariability) --------- start iteration 1 --------
+(AccumulateTVStat) Substract Mean from Speaker Statistics
+(AccumulateTVStat) compute V * Sigma-1 * V 
+(AccumulateTVStat) Compute and Inverse L Matrix for TotalVariability 
+(AccumulateTVStat) Update T Matrix
+(AccumulateTVStat) Done 
+(AccumulateTVStat) Minimum Divergence step 
+(AccumulateTVStat) Done 
+(AccumulateTVStat) ---------load statistics N [ 50 ] [ 256 ]
+(AccumulateTVStat) ---------load statistics F_X [ 50 ] [ 12800 ]
+	(TotalVariability) --------- start iteration 2 --------
+(AccumulateTVStat) Substract Mean from Speaker Statistics
+(AccumulateTVStat) compute V * Sigma-1 * V 
+(AccumulateTVStat) Compute and Inverse L Matrix for TotalVariability 
+(AccumulateTVStat) Update T Matrix
+(AccumulateTVStat) Done 
+(AccumulateTVStat) Minimum Divergence step 
+(AccumulateTVStat) Done 
+(AccumulateTVStat) ---------load statistics N [ 50 ] [ 256 ]
+(AccumulateTVStat) ---------load statistics F_X [ 50 ] [ 12800 ]
+	(TotalVariability) --------- start iteration 3 --------
+(AccumulateTVStat) Substract Mean from Speaker Statistics
+(AccumulateTVStat) compute V * Sigma-1 * V 
+(AccumulateTVStat) Compute and Inverse L Matrix for TotalVariability 
+(AccumulateTVStat) Update T Matrix
+(AccumulateTVStat) Done 
+(AccumulateTVStat) Minimum Divergence step 
+(AccumulateTVStat) Done 
+(AccumulateTVStat) ---------load statistics N [ 50 ] [ 256 ]
+(AccumulateTVStat) ---------load statistics F_X [ 50 ] [ 12800 ]
+	(TotalVariability) --------- start iteration 4 --------
+(AccumulateTVStat) Substract Mean from Speaker Statistics
+(AccumulateTVStat) compute V * Sigma-1 * V 
+(AccumulateTVStat) Compute and Inverse L Matrix for TotalVariability 
+(AccumulateTVStat) Update T Matrix
+(AccumulateTVStat) Done 
+(AccumulateTVStat) Minimum Divergence step 
+(AccumulateTVStat) Done 
+(AccumulateTVStat) ---------load statistics N [ 50 ] [ 256 ]
+(AccumulateTVStat) ---------load statistics F_X [ 50 ] [ 12800 ]
+	(TotalVariability) --------- start iteration 5 --------
+(AccumulateTVStat) Substract Mean from Speaker Statistics
+(AccumulateTVStat) compute V * Sigma-1 * V 
+(AccumulateTVStat) Compute and Inverse L Matrix for TotalVariability 
+(AccumulateTVStat) Update T Matrix
+(AccumulateTVStat) Done 
+(AccumulateTVStat) Minimum Divergence step 
+(AccumulateTVStat) Done 
+(AccumulateTVStat) ---------load statistics N [ 50 ] [ 256 ]
+(AccumulateTVStat) ---------load statistics F_X [ 50 ] [ 12800 ]
+	(TotalVariability) --------- start iteration 6 --------
+(AccumulateTVStat) Substract Mean from Speaker Statistics
+(AccumulateTVStat) compute V * Sigma-1 * V 
+(AccumulateTVStat) Compute and Inverse L Matrix for TotalVariability 
+(AccumulateTVStat) Update T Matrix
+(AccumulateTVStat) Done 
+(AccumulateTVStat) Minimum Divergence step 
+(AccumulateTVStat) Done 
+(AccumulateTVStat) ---------load statistics N [ 50 ] [ 256 ]
+(AccumulateTVStat) ---------load statistics F_X [ 50 ] [ 12800 ]
+	(TotalVariability) --------- start iteration 7 --------
+(AccumulateTVStat) Substract Mean from Speaker Statistics
+(AccumulateTVStat) compute V * Sigma-1 * V 
+(AccumulateTVStat) Compute and Inverse L Matrix for TotalVariability 
+(AccumulateTVStat) Update T Matrix
+(AccumulateTVStat) Done 
+(AccumulateTVStat) Minimum Divergence step 
+(AccumulateTVStat) Done 
+(AccumulateTVStat) ---------load statistics N [ 50 ] [ 256 ]
+(AccumulateTVStat) ---------load statistics F_X [ 50 ] [ 12800 ]
+	(TotalVariability) --------- start iteration 8 --------
+(AccumulateTVStat) Substract Mean from Speaker Statistics
+(AccumulateTVStat) compute V * Sigma-1 * V 
+(AccumulateTVStat) Compute and Inverse L Matrix for TotalVariability 
+(AccumulateTVStat) Update T Matrix
+(AccumulateTVStat) Done 
+(AccumulateTVStat) Minimum Divergence step 
+(AccumulateTVStat) Done 
+(AccumulateTVStat) ---------load statistics N [ 50 ] [ 256 ]
+(AccumulateTVStat) ---------load statistics F_X [ 50 ] [ 12800 ]
+	(TotalVariability) --------- start iteration 9 --------
+(AccumulateTVStat) Substract Mean from Speaker Statistics
+(AccumulateTVStat) compute V * Sigma-1 * V 
+(AccumulateTVStat) Compute and Inverse L Matrix for TotalVariability 
+(AccumulateTVStat) Update T Matrix
+(AccumulateTVStat) Done 
+(AccumulateTVStat) Minimum Divergence step 
+(AccumulateTVStat) Done 
+(AccumulateTVStat) ---------load statistics N [ 50 ] [ 256 ]
+(AccumulateTVStat) ---------load statistics F_X [ 50 ] [ 12800 ]
+	(TotalVariability) --------- save Matrix --------
+	(TotalVariability) --------- end of process --------
+(SegTools) >> Proceeding label file reading for [m007_01_001] <<
+add a segment, name[speech] begin frame[48] length in frame[65]
+add a segment, name[speech] begin frame[126] length in frame[12]
+add a segment, name[speech] begin frame[151] length in frame[9]
+add a segment, name[speech] begin frame[165] length in frame[6]
+add a segment, name[speech] begin frame[195] length in frame[3]
+(SegTools) >> Proceeding label file reading for [m007_01_002] <<
+add a segment, name[speech] begin frame[48] length in frame[39]
+add a segment, name[speech] begin frame[97] length in frame[14]
+add a segment, name[speech] begin frame[114] length in frame[38]
+add a segment, name[speech] begin frame[158] length in frame[11]
+add a segment, name[speech] begin frame[179] length in frame[3]
+add a segment, name[speech] begin frame[183] length in frame[11]
+add a segment, name[speech] begin frame[195] length in frame[16]
+add a segment, name[speech] begin frame[219] length in frame[2]
+(SegTools) >> Proceeding label file reading for [m007_01_003] <<
+add a segment, name[speech] begin frame[43] length in frame[4]
+add a segment, name[speech] begin frame[48] length in frame[32]
+add a segment, name[speech] begin frame[82] length in frame[15]
+add a segment, name[speech] begin frame[106] length in frame[12]
+add a segment, name[speech] begin frame[124] length in frame[3]
+add a segment, name[speech] begin frame[128] length in frame[9]
+add a segment, name[speech] begin frame[148] length in frame[10]
+add a segment, name[speech] begin frame[164] length in frame[8]
+add a segment, name[speech] begin frame[185] length in frame[2]
+(SegTools) >> Proceeding label file reading for [m007_01_004] <<
+add a segment, name[speech] begin frame[45] length in frame[14]
+add a segment, name[speech] begin frame[68] length in frame[42]
+add a segment, name[speech] begin frame[121] length in frame[33]
+add a segment, name[speech] begin frame[155] length in frame[1]
+add a segment, name[speech] begin frame[157] length in frame[14]
+add a segment, name[speech] begin frame[189] length in frame[7]
+add a segment, name[speech] begin frame[203] length in frame[23]
+add a segment, name[speech] begin frame[238] length in frame[11]
+(SegTools) >> Proceeding label file reading for [m007_01_005] <<
+add a segment, name[speech] begin frame[80] length in frame[49]
+add a segment, name[speech] begin frame[146] length in frame[47]
+add a segment, name[speech] begin frame[194] length in frame[26]
+add a segment, name[speech] begin frame[250] length in frame[20]
+add a segment, name[speech] begin frame[273] length in frame[17]
+add a segment, name[speech] begin frame[291] length in frame[10]
+add a segment, name[speech] begin frame[307] length in frame[6]
+add a segment, name[speech] begin frame[320] length in frame[2]
+(SegTools) >> Proceeding label file reading for [m008_01_001] <<
+add a segment, name[speech] begin frame[66] length in frame[71]
+add a segment, name[speech] begin frame[147] length in frame[9]
+add a segment, name[speech] begin frame[169] length in frame[40]
+(SegTools) >> Proceeding label file reading for [m008_01_002] <<
+add a segment, name[speech] begin frame[0] length in frame[1]
+add a segment, name[speech] begin frame[90] length in frame[33]
+add a segment, name[speech] begin frame[129] length in frame[57]
+add a segment, name[speech] begin frame[190] length in frame[47]
+add a segment, name[speech] begin frame[241] length in frame[7]
+add a segment, name[speech] begin frame[251] length in frame[1]
+(SegTools) >> Proceeding label file reading for [m008_01_003] <<
+add a segment, name[speech] begin frame[41] length in frame[29]
+add a segment, name[speech] begin frame[77] length in frame[15]
+add a segment, name[speech] begin frame[102] length in frame[15]
+add a segment, name[speech] begin frame[120] length in frame[10]
+add a segment, name[speech] begin frame[133] length in frame[21]
+add a segment, name[speech] begin frame[170] length in frame[8]
+add a segment, name[speech] begin frame[182] length in frame[7]
+add a segment, name[speech] begin frame[196] length in frame[3]
+add a segment, name[speech] begin frame[201] length in frame[6]
+(SegTools) >> Proceeding label file reading for [m008_01_004] <<
+add a segment, name[speech] begin frame[40] length in frame[62]
+add a segment, name[speech] begin frame[112] length in frame[50]
+add a segment, name[speech] begin frame[209] length in frame[14]
+add a segment, name[speech] begin frame[235] length in frame[11]
+add a segment, name[speech] begin frame[255] length in frame[9]
+add a segment, name[speech] begin frame[268] length in frame[15]
+add a segment, name[speech] begin frame[288] length in frame[11]
+(SegTools) >> Proceeding label file reading for [m008_01_005] <<
+add a segment, name[speech] begin frame[76] length in frame[45]
+add a segment, name[speech] begin frame[126] length in frame[34]
+add a segment, name[speech] begin frame[177] length in frame[19]
+add a segment, name[speech] begin frame[208] length in frame[11]
+add a segment, name[speech] begin frame[225] length in frame[9]
+add a segment, name[speech] begin frame[250] length in frame[4]
+(SegTools) >> Proceeding label file reading for [m009_01_001] <<
+add a segment, name[speech] begin frame[112] length in frame[84]
+add a segment, name[speech] begin frame[202] length in frame[22]
+add a segment, name[speech] begin frame[236] length in frame[14]
+add a segment, name[speech] begin frame[252] length in frame[24]
+add a segment, name[speech] begin frame[284] length in frame[24]
+(SegTools) >> Proceeding label file reading for [m009_01_002] <<
+add a segment, name[speech] begin frame[45] length in frame[24]
+add a segment, name[speech] begin frame[70] length in frame[9]
+add a segment, name[speech] begin frame[92] length in frame[13]
+add a segment, name[speech] begin frame[110] length in frame[5]
+add a segment, name[speech] begin frame[127] length in frame[25]
+add a segment, name[speech] begin frame[158] length in frame[11]
+add a segment, name[speech] begin frame[173] length in frame[14]
+add a segment, name[speech] begin frame[189] length in frame[27]
+add a segment, name[speech] begin frame[227] length in frame[6]
+(SegTools) >> Proceeding label file reading for [m009_01_003] <<
+add a segment, name[speech] begin frame[39] length in frame[29]
+add a segment, name[speech] begin frame[70] length in frame[17]
+add a segment, name[speech] begin frame[102] length in frame[13]
+add a segment, name[speech] begin frame[119] length in frame[19]
+add a segment, name[speech] begin frame[152] length in frame[11]
+add a segment, name[speech] begin frame[168] length in frame[7]
+add a segment, name[speech] begin frame[185] length in frame[13]
+add a segment, name[speech] begin frame[207] length in frame[17]
+(SegTools) >> Proceeding label file reading for [m009_01_004] <<
+add a segment, name[speech] begin frame[37] length in frame[21]
+add a segment, name[speech] begin frame[65] length in frame[26]
+add a segment, name[speech] begin frame[92] length in frame[15]
+add a segment, name[speech] begin frame[123] length in frame[36]
+add a segment, name[speech] begin frame[167] length in frame[17]
+add a segment, name[speech] begin frame[190] length in frame[15]
+add a segment, name[speech] begin frame[210] length in frame[11]
+add a segment, name[speech] begin frame[225] length in frame[36]
+add a segment, name[speech] begin frame[275] length in frame[8]
+(SegTools) >> Proceeding label file reading for [m009_01_005] <<
+add a segment, name[speech] begin frame[26] length in frame[48]
+add a segment, name[speech] begin frame[78] length in frame[39]
+add a segment, name[speech] begin frame[131] length in frame[17]
+add a segment, name[speech] begin frame[149] length in frame[36]
+add a segment, name[speech] begin frame[188] length in frame[21]
+(SegTools) >> Proceeding label file reading for [m010_01_001] <<
+add a segment, name[speech] begin frame[57] length in frame[62]
+add a segment, name[speech] begin frame[133] length in frame[14]
+add a segment, name[speech] begin frame[160] length in frame[24]
+add a segment, name[speech] begin frame[186] length in frame[3]
+(SegTools) >> Proceeding label file reading for [m010_01_002] <<
+add a segment, name[speech] begin frame[0] length in frame[1]
+add a segment, name[speech] begin frame[42] length in frame[27]
+add a segment, name[speech] begin frame[74] length in frame[34]
+add a segment, name[speech] begin frame[112] length in frame[26]
+add a segment, name[speech] begin frame[139] length in frame[14]
+add a segment, name[speech] begin frame[156] length in frame[6]
+add a segment, name[speech] begin frame[163] length in frame[23]
+add a segment, name[speech] begin frame[188] length in frame[20]
+(SegTools) >> Proceeding label file reading for [m010_01_003] <<
+add a segment, name[speech] begin frame[46] length in frame[31]
+add a segment, name[speech] begin frame[80] length in frame[15]
+add a segment, name[speech] begin frame[112] length in frame[10]
+add a segment, name[speech] begin frame[136] length in frame[5]
+add a segment, name[speech] begin frame[151] length in frame[7]
+add a segment, name[speech] begin frame[163] length in frame[7]
+add a segment, name[speech] begin frame[182] length in frame[8]
+(SegTools) >> Proceeding label file reading for [m010_01_004] <<
+add a segment, name[speech] begin frame[54] length in frame[11]
+add a segment, name[speech] begin frame[74] length in frame[15]
+add a segment, name[speech] begin frame[91] length in frame[27]
+add a segment, name[speech] begin frame[131] length in frame[47]
+add a segment, name[speech] begin frame[190] length in frame[12]
+add a segment, name[speech] begin frame[212] length in frame[6]
+add a segment, name[speech] begin frame[223] length in frame[20]
+add a segment, name[speech] begin frame[244] length in frame[10]
+add a segment, name[speech] begin frame[269] length in frame[13]
+(SegTools) >> Proceeding label file reading for [m010_01_005] <<
+add a segment, name[speech] begin frame[57] length in frame[40]
+add a segment, name[speech] begin frame[101] length in frame[38]
+add a segment, name[speech] begin frame[151] length in frame[15]
+add a segment, name[speech] begin frame[175] length in frame[31]
+add a segment, name[speech] begin frame[211] length in frame[1]
+Processing file[m007_01_001]
+Processing file[m007_01_002]
+Processing file[m007_01_003]
+Processing file[m007_01_004]
+Processing file[m007_01_005]
+Processing file[m008_01_001]
+Processing file[m008_01_002]
+Processing file[m008_01_003]
+Processing file[m008_01_004]
+Processing file[m008_01_005]
+Processing file[m009_01_001]
+Processing file[m009_01_002]
+Processing file[m009_01_003]
+Processing file[m009_01_004]
+Processing file[m009_01_005]
+Processing file[m010_01_001]
+Processing file[m010_01_002]
+Processing file[m010_01_003]
+Processing file[m010_01_004]
+Processing file[m010_01_005]
+(AccumulateJFAStat) FA Accs states saved
+IN TRAIN TARGET
+TrainTarget - Load world model [world]
+Use[world] for initializing EM
+Train model [m007_01_001]
+ WARNING - NO DATA FOR TRAINING [m007_01_001]Train model [m007_01_002]
+ WARNING - NO DATA FOR TRAINING [m007_01_002]Train model [m007_01_003]
+ WARNING - NO DATA FOR TRAINING [m007_01_003]Train model [m007_01_004]
+ WARNING - NO DATA FOR TRAINING [m007_01_004]Train model [m007_01_005]
+ WARNING - NO DATA FOR TRAINING [m007_01_005]Train model [m008_01_001]
+ WARNING - NO DATA FOR TRAINING [m008_01_001]Train model [m008_01_002]
+ WARNING - NO DATA FOR TRAINING [m008_01_002]Train model [m008_01_003]
+ WARNING - NO DATA FOR TRAINING [m008_01_003]Train model [m008_01_004]
+ WARNING - NO DATA FOR TRAINING [m008_01_004]Train model [m008_01_005]
+ WARNING - NO DATA FOR TRAINING [m008_01_005]Train model [m009_01_001]
+ WARNING - NO DATA FOR TRAINING [m009_01_001]Train model [m009_01_002]
+ WARNING - NO DATA FOR TRAINING [m009_01_002]Train model [m009_01_003]
+ WARNING - NO DATA FOR TRAINING [m009_01_003]Train model [m009_01_004]
+ WARNING - NO DATA FOR TRAINING [m009_01_004]Train model [m009_01_005]
+ WARNING - NO DATA FOR TRAINING [m009_01_005]Train model [m010_01_001]
+ WARNING - NO DATA FOR TRAINING [m010_01_001]Train model [m010_01_002]
+ WARNING - NO DATA FOR TRAINING [m010_01_002]Train model [m010_01_003]
+ WARNING - NO DATA FOR TRAINING [m010_01_003]Train model [m010_01_004]
+ WARNING - NO DATA FOR TRAINING [m010_01_004]Train model [m010_01_005]
+ WARNING - NO DATA FOR TRAINING [m010_01_005]
